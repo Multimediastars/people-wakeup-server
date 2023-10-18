@@ -21,7 +21,8 @@ const UserSchema = Schema({
     },
     profile: {
         type: String,
-        default: 'https://q-care-space.ams3.digitaloceanspaces.com/users/no-user.jpg',
+        default: 'https://res.cloudinary.com/people-wake-up/image/upload/v1697657150/no-user.jpg',
+        // default: 'https://q-care-space.ams3.digitaloceanspaces.com/users/no-user.jpg',
         // default: 'https://res.cloudinary.com/growers-packers/image/upload/v1629145845/users/defaultUser1234.jpg',
     },
     rol: {

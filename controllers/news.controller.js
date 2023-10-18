@@ -80,12 +80,13 @@ const getSingleNews = async (req, res = response) => {
 // Create Post
 const createNews = async (req, res = response) => {
 
-    const { title, description, mediaType = "image", videoFile = null } = req.body
+    const { title, description, cover, videoFile = null } = req.body
     const file = req.file
 
     let activeNews = {
         title,
         description,
+        cover,
         mediaType: videoFile ? "video" : "image",
         videoFile,
         author: req.uid

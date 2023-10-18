@@ -15,7 +15,7 @@ const connectedDB = async() => {
         
     } catch (error) {
         console.log(error)
-        throw new Error('Error in the Database')
+        throw new Error('Error in the Database SSSS')
     }
 }
 
